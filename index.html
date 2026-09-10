@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .active{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="lista">
+        <p class="item">tal tal tal 1234</p>
+        <p class="item">tal tal tal 12345</p>
+        <p class="item">tal tal tal 12346</p>
+        <p class="item">tal tal tal 12347</p>
+        <p class="item">tal tal tal 12348</p>
+        <p class="item">tal tal tal 12349</p>
+        <p class="item">tal tal tal 123410</p>
+        <p class="item">tal tal tal 123411</p>
+        <p>tal tal tal 123411</p>
+        <p>tal tal tal 123412</p>
+        <p>tal tal tal 123413</p>
+    </div>
+</body>
+<script>
+    const lista = document.getElementById('lista')
+
+    lista.addEventListener('mouseenter',() => {
+        lista.classList.add("active")
+        alert("ativouuu")
+    })
+lista.addEventListener('mouseleave',() => {
+        lista.classList.remove("active")
+    })
+
+</script>
+</html>
